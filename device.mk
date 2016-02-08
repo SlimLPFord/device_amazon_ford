@@ -91,6 +91,34 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/.ht120.mtc:system/etc/.tp/.ht120.mtc \
      $(LOCAL_PATH)/configs/thermal.off.conf:system/etc/.tp/thermal.off.conf
 
+# Theme overlays from setiawanjimmy
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_AOSPCalculator.apk:system/vendor/overlay/SlimMod_AOSPCalculator.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_AOSPContacts.apk:system/vendor/overlay/SlimMod_AOSPContacts.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_AOSPDeskClock.apk:system/vendor/overlay/SlimMod_AOSPDeskClock.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_AOSPDialer.apk:system/vendor/overlay/SlimMod_AOSPDialer.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_AOSPKeyboard.apk:system/vendor/overlay/SlimMod_AOSPKeyboard.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_AOSPLauncher3.apk:system/vendor/overlay/SlimMod_AOSPLauncher3.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_AOSPMms.apk:vendor/overlay/SlimMod_AOSPMms.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Apple_Music_Notification.apk:system/vendor/overlay/SlimMod_Apple_Music_Notification.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_CellBroadcastReceiver.apk:system/vendor/overlay/SlimMod_CellBroadcastReceiver.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_DocumentsUI.apk:system/vendor/overlay/SlimMod_DocumentsUI.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Framework.apk:system/vendor/overlay/SlimMod_Framework.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Google_Hangouts_Notification.apk:system/vendor/overlay/SlimMod_Google_Hangouts_Notification.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Google_Inbox_Notification.apk:system/vendor/overlay/SlimMod_Google_Inbox_Notification.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Google_Mail_Notification.apk:system/vendor/overlay/SlimMod_Google_Mail_Notification.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Google_Mms_Notification.apk:system/vendor/overlay/SlimMod_Google_Mms_Notification.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_LayersManager.apk:system/vendor/overlay/SlimMod_LayersManager.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_LockcLock.apk:system/vendor/overlay/SlimMod_LockcLock.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_MediaProvider.apk:system/vendor/overlay/SlimMod_MediaProvider.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Phone.apk:system/vendor/overlay/SlimMod_Phone.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Settings.apk:system/vendor/overlay/SlimMod_Settings.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_SlimOTA.apk:system/vendor/overlay/SlimMod_SlimOTA.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_SuperSU.apk:system/vendor/overlay/SlimMod_SuperSU.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_SystemUI.apk:system/vendor/overlay/SlimMod_SystemUI.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Telecom.apk:system/vendor/overlay/SlimMod_Telecom.apk \
+     $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Navbar.apk:system/vendor/overlay/SlimMod_Navbar.apk
+
 #Hack to set selinux permissive on boot.
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/sepolicy/vcodec_kernel_driver.ko:system/lib/modules/vcodec_kernel_driver.ko
