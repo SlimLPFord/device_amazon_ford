@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, vendor/amazon/ford/ford-vendor.mk)
 
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
 
@@ -118,6 +117,15 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_SystemUI.apk:system/vendor/overlay/SlimMod_SystemUI.apk \
      $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Telecom.apk:system/vendor/overlay/SlimMod_Telecom.apk \
      $(LOCAL_PATH)/rootdir/vendor/overlay/SlimMod_Navbar.apk:system/vendor/overlay/SlimMod_Navbar.apk
+     
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.adb.secure=0 \
+    persist.adb.notify=0 \
+    ro.secure=0 \
+    persist.sys.root_access=3 \
+    ro.debuggable=1 \
+    persist.service.adb.enable=1     
+     
 
 #Hack to set selinux permissive on boot.
 PRODUCT_COPY_FILES += \
